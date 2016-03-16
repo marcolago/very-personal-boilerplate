@@ -1,0 +1,175 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin-top: 0;
+}
+
+* + * {
+  margin-top: #{ $line-height + "px" };
+  margin-top: #{ $line-height + "rem" };
+}
+
+* + br,
+* + div, 
+* + span, 
+* + a,
+* + b,
+* + i,
+* + strong,
+* + em,
+* + header,
+* + nav, 
+* + section,
+* + article,
+* + aside,
+* + footer,
+* + form,
+* + input,
+* + button
+{
+  margin: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url(../img/pattern-bg.jpg);
+  background-position: center top;
+}
+
+body {
+  font-family: $f_body_stack;
+  font-weight: $f_normal_weight;
+  line-height: $line-height;
+  color: $c_text_primary;
+  overflow-y: scroll;
+  background-image: url(../img/tech-bg.png);
+  background-position: center 8em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  &.blaster-list-show {
+    overflow: hidden;
+  }
+}
+
+p {
+  text-shadow: 0 1px 0 black;
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend %title;
+  margin-bottom: 0;
+  font-weight: inherit;
+  line-height: 1.2;
+  text-shadow: 0 1px 0 black;
+}
+
+h1 {
+  font-size: 2.441em;
+}
+
+h2 { 
+  font-size: 1.953em;
+}
+h3 {
+  font-size: 1.563em;
+}
+
+h4, h5, h6,
+%title--small {
+  font-size: 1.25em;
+  line-height: $line-height / 1.25;
+}
+
+b, strong,
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $f_bold_weight;
+}
+
+.title {
+  font-family: $f_title_stack;
+  font-weight: $f_title_weight;
+
+  span {
+    white-space: nowrap;
+  }
+}
+
+.content--wide .title {
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 0;
+}
+
+.at {
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+
+a {
+  color: $c_links;
+  text-decoration: inherit;
+}
+
+figure {
+  width: auto !important;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  @extend %thumb !optional;
+  display: inline-block;
+
+  img {
+    width: 100% !important;
+  }
+}
+
+li {
+  margin: 0 0 0 get-em($line-height);
+  padding: 0;
+}
+
+figcaption {
+  font-size: 0.8em;
+  margin: 0.5em;
+  padding-top: 0.5em;
+  display: block;
+}
+
+input {
+  font-size: 1em;
+  line-height: 2;
+  padding: 0.5em;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+}
+
+label {
+  display: block;
+  float: none;
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+  color: white;
+  padding: 0.5em 2em;
+  background-color: $c_button_primary;
+  border: none;
+  box-shadow: 0 1px 5px 0 rgba(black, 0.3);
+}

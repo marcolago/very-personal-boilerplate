@@ -1,0 +1,142 @@
+.cookie-policy {
+
+  line-height: $line-height;
+  text-align: left;
+
+  .header {
+    height: 16em;
+    min-height: inherit;
+
+    @media screen and ($mq_small_max) {
+      height: 7em;
+    }
+
+    &:after {
+      content: none;
+    }
+  }
+
+  h1 {
+    margin-bottom: 2em;
+  }
+
+  h2, h3, h4, h5, h6 {
+    margin-bottom: 1em;  
+  }
+
+  p, ol li {
+    margin-bottom: $line-height * 1em;
+  }
+}
+
+/*
+########     ###    ##    ## ##    ## ######## ########  
+##     ##   ## ##   ###   ## ###   ## ##       ##     ## 
+##     ##  ##   ##  ####  ## ####  ## ##       ##     ## 
+########  ##     ## ## ## ## ## ## ## ######   ########  
+##     ## ######### ##  #### ##  #### ##       ##   ##   
+##     ## ##     ## ##   ### ##   ### ##       ##    ##  
+########  ##     ## ##    ## ##    ## ######## ##     ## 
+*/
+
+.cookie-policy__text {
+  max-width: get-em(1366);
+  padding: 2em 7%;
+  margin: 0 auto;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50000; // $z_modal;
+}
+
+.modal__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: transparent;
+  background-color: rgba($c_bg_primary, 0.9);
+  background-image: url(../img/esa-pattern-dark.png);
+  transition: all 0.5s;
+  perspective: 2000px;
+}
+
+.modal__close {
+  width: auto;
+  height: 2em;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em; 
+}
+
+.cookie-modal__content {
+  margin: 0;
+  padding: 1em;
+  padding-right: 3em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: white;
+  box-shadow: 0 -1px 10px 0 black;
+  transition: all 0.5s;
+
+  @media screen and ($mq_nomensland_max) {
+    font-size: 0.8em;
+    line-height: 1;
+  }
+
+  p {
+    font-family: inherit;
+    font-size: 1em;
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-shadow: none;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.modal__title {
+  color: $c_bg_primary;
+  text-shadow: none;
+}
+
+.hiding .modal__layer {
+  opacity: 0;
+}
+
+.hiding .cookie-modal__content {
+  transform: translateY(110%);
+  opacity: 0;
+}
+
+.cookie__visual {
+  position: relative;
+  width: 275px;
+  height: 306px;
+  margin: 15% auto 0;
+  margin-top: calc(50vh - 153px);
+
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .cookie-dart {
+    bottom: 135px;
+    left: 0;
+  }
+}

@@ -1,0 +1,68 @@
+.gform_fields {
+  margin: 0;
+  margin-top: $line-height * 1em;
+  padding: 0;
+  display: block;
+}
+
+.gfield {
+  margin: 0;
+  margin-bottom: $line-height * 1em;
+  display: block;
+}
+
+.gfield_required {
+  display: none;
+}
+
+.gform_footer {
+  text-align: center;
+  border-top: 2px solid $c_button_light;
+  padding-top: 1.5em;
+  @media screen and ($mq_small_max) {
+    text-align: center;
+  }  
+}
+
+button {
+  font-size: inherit;
+}
+
+label {
+  font-family: $f_title_stack;
+
+  @media screen and ($mq_small_max) {
+    text-align: left;
+  }  
+}
+
+input[type=text] {
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+input[type=email] {
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+input[type=number] {
+  width: 7em;
+
+  @media screen and ($mq_small_max) {
+    width: 100%;
+  }  
+}
+
+input + .button {
+  margin-top: 0.5em;
+}
+
+input[type=submit] {
+  @extend .button;
+  margin: 0.5em;
+
+  @media screen and ($mq_small_max) {
+    margin: 0.5em 0;
+  }  
+}

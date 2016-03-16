@@ -1,0 +1,4 @@
+@mixin background_button() {
+  background-color: $c_button_primary;
+  background-image: linear-gradient(to bottom, $c_button_light 0, $c_button_dark 100%);
+}

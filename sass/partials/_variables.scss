@@ -1,0 +1,54 @@
+/*
+COLORS
+*/
+$c_text_primary:                      white;
+
+$c_bg_primary:                        #004d8f;
+
+$c_button_primary:                    #f56b2b;
+$c_button_light:                      #ff833c;
+$c_button_dark:                       #ea4d17;
+$c_button_darker:                     #bf3100;
+
+$c_runner_primary:                    #537bbb;
+$c_runner_light:                      #7499cf;
+$c_runner_dark:                       #325ca6;
+
+$c_links:                             #2560AF;
+
+$c_error_primary:                     red;
+
+/*
+FONTS
+*/
+
+$line-height:                            1.5;
+
+/*
+SIZES
+*/
+
+$min_map_height:                      30em;
+$medium_map_height:                   20em;
+
+
+/*
+TIMING
+*/
+
+$time_default_transition:                0.3s;
+$time_menu_transition:                   0.3s;
+
+
+/*
+Z-INDEX
+*/
+
+$z-index_back:              1;
+$z-index_level1:            100;
+$z-index_level2:            200;
+$z-index_level3:            300;
+$z-index_front:             1000;
+$z-index_header:            5000;
+$z-index_menu:              5500;
+$z-index_overlay:           10000;

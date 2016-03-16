@@ -1,0 +1,58 @@
+.site-footer {
+  width: 100%;
+  margin-top: 3em;
+  background: white;
+  position: relative;
+  box-shadow: 0 -3px 10px 0 black;
+}
+
+.footer__container {
+  max-width: get-em(1400);
+  margin: 0 auto;
+}
+
+.footer__content {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  @media screen and ($mq_nomensland_max) {
+    font-size: get-em(14);
+  }
+
+  @media screen and ($mq_small_max) {
+    font-size: get-em(12);
+    order: 10;
+  }
+}
+
+.footer__links {
+  color: $c_links;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.footer__logo {
+  width: 10%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  @media screen and ($mq_medium_max) {
+    width: 15%;
+  }
+
+  @media screen and ($mq_small_max) {
+    width: 8em;
+  }
+}
+
+.footer__socials {
+  
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    width: get-em(40);
+  }
+}

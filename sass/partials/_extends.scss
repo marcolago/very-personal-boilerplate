@@ -1,0 +1,16 @@
+%title {
+  font-family: $f_title_stack;
+}
+
+%thumb {
+
+}
+
+%clearfix {
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

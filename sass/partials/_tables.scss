@@ -1,0 +1,35 @@
+table {
+  width: 100%;
+  padding: 0.5em;
+  box-sizing: border-box;
+  /* background-color: $c_bg_primary; */
+}
+
+td {
+  vertical-align: top;
+  width: 40%;
+  padding: 0 0 0 0.5em;
+  border-bottom: 1px solid $c_hilight_secondary;
+}
+
+tr:last-child td {
+  border: none;
+}
+
+td:first-child {
+  width: 55%;
+  padding: 0 0.5em 0 0;
+}
+
+/*
+VARIANTS AND DETAILS
+*/
+
+.alt {
+  
+  td {
+    vertical-align: middle;
+    padding: 0.5em;
+  }
+
+}
